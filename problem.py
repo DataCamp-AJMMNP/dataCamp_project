@@ -54,7 +54,14 @@ def _read_data(path, f_name):
     data = pd.read_csv(os.path.join(path, 'data', f_name))
 
     X_df = data.drop([_target_column_name] + _ignore_column_names, axis=1)
-    # X_df = X_df.astype(_change_column_names)
+    X_df['date_visite_diagnostiqueur'] = X_df['date_visite_diagnostiqueur'].astype('datetime64[ns]')
+    X_df['date_etablissement_dpe'] = X_df['date_etablissement_dpe'].astype('datetime64[ns]')
+    X_df['date_arrete_tarifs_energies'] = X_df['date_arrete_tarifs_energies'].astype('datetime64[ns]')
+    X_df['code_postal'] = X_df['code_postal'].astype('string')
+    X_df['code_insee_commune'] = X_df[ 'code_insee_commune'].astype('string')
+    X_df['code_insee_commune_actualise'] = X_df['code_insee_commune_actualise'].astype('string')
+    X_df['date_reception_dpe'] = X_df['date_reception_dpe'].astype('datetime64[ns]')
+
 
     y_array = data[_target_column_name]
     y_array = y_array.map(cat_to_int).fillna(-1).astype("int8").values
