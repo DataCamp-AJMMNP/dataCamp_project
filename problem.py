@@ -42,12 +42,12 @@ score_types = [
 #                         'date_reception_dpe':'datetime64[ns]'}
 _target_column_name = 'classe_consommation_energie'
 _ignore_column_names = ['id', 'numero_dpe', 'version_methode_dpe',
-       'nom_methode_etude_thermique', 'version_methode_etude_thermique',
-       'commentaires_ameliorations_recommandations',
-       'explication_personnalisee', 'estimation_ges',
-       'classe_estimation_ges', 'nom_rue', 'numero_rue',
-       'batiment', 'escalier', 'etage', 'porte', 'numero_lot',
-       'partie_batiment', 'adresse_organisme_certificateur']
+                        'nom_methode_etude_thermique', 'version_methode_etude_thermique',
+                        'commentaires_ameliorations_recommandations',
+                        'explication_personnalisee', 'estimation_ges',
+                        'classe_estimation_ges', 'nom_rue', 'numero_rue',
+                        'batiment', 'escalier', 'etage', 'porte', 'numero_lot',
+                        'partie_batiment', 'adresse_organisme_certificateur']
 
 
 def _read_data(path, f_name):
