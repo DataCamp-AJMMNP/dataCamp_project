@@ -3,7 +3,8 @@
 
 
 Authors : Julian Agudelo, Malek Baroudi, Nada Kassara, Afonso Ponce, Paul Rousseau and Matthieu Verlynde (AgroParisTech - Université Paris-Saclay, Palaiseau)
-Data from : https://data.ademe.fr/datasets/dpe-france (only departement 75)
+
+Data from : https://data.ademe.fr/datasets/dpe-france (only departement 75).
 
 
 ## Getting started
