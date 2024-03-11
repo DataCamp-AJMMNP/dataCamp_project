@@ -24,7 +24,7 @@ usage.
 
 ### Challenge description
 
-Get started with the [dedicated notebook](dpeparis_starting_kit.ipynb)
+Get started with the [dedicated notebook](dpe_paris_starting_kit.ipynb)
 
 
 ### Test a submission
